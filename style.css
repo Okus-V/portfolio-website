@@ -3,8 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root{
+    --bg0range:#e84949;
+}
 #wrapper{
-    height: 100vp;
+   
     overflow-y: hidden; /* This hides the vertical scroll bar */
     overflow-x: hidden;
 }
@@ -79,7 +82,7 @@ a{
     font-size: 7em;
     color: rgb(231, 231, 231);
     position: absolute;
-    bottom: -16%;
+    bottom: -17.5%;
     left: -15px;
     font-weight: bold;
     transition: all 3s;
@@ -250,4 +253,27 @@ animation-iteration-count: infinite;
  transform: scaleX(1);
 }
 
+.project_section {
+     background-color:rgb(231, 231, 231);
+     margin-top: 4rem;
+}
 
+.pro-heading{
+color: var(--bg0range);
+font-size: 90px;
+text-align: center;
+}
+.project-cointainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_card{
+width: 90%;
+height: 550px;
+
+
+}
