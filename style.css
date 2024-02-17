@@ -1,32 +1,39 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-:root{
-    --bg0range:#e84949;
+
+:root {
+    --bg0range: #e84949;
 }
-#wrapper{
-   
-    overflow-y: hidden; /* This hides the vertical scroll bar */
+
+#wrapper {
+
+    overflow-y: hidden;
+    /* This hides the vertical scroll bar */
     overflow-x: hidden;
 }
-.cointainer{
+
+.cointainer {
     width: 1200px;
-    margin :0px;
+    margin: 0px;
 
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: 1rem;
 }
-.Logo{
+
+.Logo {
     width: 80px;
 }
-.logo-conintainer{
+
+.logo-conintainer {
     display: flex;
     align-items: center;
     justify-content: baseline;
@@ -34,42 +41,46 @@
     margin-top: 20px;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     gap: 2rem;
     padding: 0rem 4rem;
-  
+
 }
-.logotext{
+
+.logotext {
     margin-left: -1.2rem;
     padding: 0px;
     font-size: 28px;
 
 }
 
-a{
+a {
     text-decoration: none;
-    
+
 }
-.nav-menu div a{ 
+
+.nav-menu div a {
     color: black;
     font-size: 20px;
     font-weight: 500;
 
     cursor: pointer;
 }
-.nav-menu :hover{
+
+.nav-menu :hover {
     transition: 0.8s;
     font-weight: bold;
 }
-.hero-section{
+
+.hero-section {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-    
+
+
+
     gap: 5rem;
     margin: 4rem;
     padding: 0 1rem;
@@ -77,7 +88,7 @@ a{
 
 }
 
-.fade-text{
+.fade-text {
     user-select: none;
     font-size: 7em;
     color: rgb(231, 231, 231);
@@ -87,108 +98,125 @@ a{
     font-weight: bold;
     transition: all 3s;
 }
-.hero-left{
+
+.hero-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
-.hero-heading{
+
+.hero-heading {
 
     font-size: 35px;
     font-weight: 500;
     color: rgba(18, 6, 6, 0.936);
 }
-.roll{
+
+.roll {
     color: blue;
     font-weight: 800;
 }
-.hero-subheading{
+
+.hero-subheading {
     font-size: 45px;
     line-height: 45px;
 }
-.hero-para{
-margin-top: 1rem;
-width: 70%;
-font-weight: 500;
+
+.hero-para {
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
 }
 
-.hero-section-right{
+.hero-section-right {
     position: relative;
- 
+
 }
-.absolute{
+
+.absolute {
     position: absolute;
 }
-.user-image{
-    
+
+.user-image {
+
     padding: 2.5rem;
     filter: grayscale(1);
     transition: all 1s;
     animation: Scaleimg 5s linear infinite;
-    
-  
+
+
 }
-.user-image img{
+
+.user-image img {
     z-index: -1;
-    height:300px;
-    width:280px;
+    height: 300px;
+    width: 280px;
 }
 
 @keyframes Scaleimg {
-    0%{filter: grayscale(0);
-    transform:scale(1) ;
+    0% {
+        filter: grayscale(0);
+        transform: scale(1);
     }
-    50%{filter: grayscale(0.8);
-        transform:scale(1.1);
+
+    50% {
+        filter: grayscale(0.8);
+        transform: scale(1.1);
         box-shadow: 10px 3px 10px;
     }
-    100%{filter: grayscale(0);
-        transform:scale(1)}
-    
+
+    100% {
+        filter: grayscale(0);
+        transform: scale(1)
+    }
+
 }
 
-.icon-dots{
+.icon-dots {
     z-index: 9;
     bottom: -1rem;
     right: 1rem;
-    animation: dots 5s infinite  ;
+    animation: dots 5s infinite;
 }
+
 @keyframes dots {
-    0%{
+    0% {
         transform: translateY(0px);
     }
 
-    50%{
+    50% {
         transform: translateY(15px);
     }
 
-    100%{
+    100% {
         transform: translateY(0px);
     }
 }
 
-.icon-cube{
+.icon-cube {
     right: 1rem;
     z-index: 9;
     animation-name: cuberot;
-animation-duration: 2.5s;
-animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
-@keyframes cuberot{
-    0%{
+
+@keyframes cuberot {
+    0% {
         transform: rotateY(0deg) translatey(0px);
     }
 
-    50%{
-        transform: rotateY(180deg)  translatey(-12px); 
+    50% {
+        transform: rotateY(180deg) translatey(-12px);
     }
 
-    100%{
-        transform: rotateY(360deg) translatey(0px); 
+    100% {
+        transform: rotateY(360deg) translatey(0px);
     }
 }
-.icon-circle{
+
+.icon-circle {
     z-index: 9;
     animation-name: circle;
     animation-duration: 5s;
@@ -196,14 +224,16 @@ animation-iteration-count: infinite;
     left: 0;
     bottom: 0;
 }
-@keyframes circle{
-    50%{
+
+@keyframes circle {
+    50% {
         left: 5%;
         bottom: 10%;
         right: 5%;
     }
 }
-.icon-zigzag{
+
+.icon-zigzag {
     z-index: 9;
     top: -0.8rem;
     left: 5%;
@@ -211,22 +241,25 @@ animation-iteration-count: infinite;
     animation-name: zigzag;
     animation-iteration-count: infinite;
 }
-@keyframes zigzag{
 
-    50%{
- top: 3%;
- left: 0%;
+@keyframes zigzag {
+
+    50% {
+        top: 3%;
+        left: 0%;
     }
- 
+
 }
-.btn{
+
+.btn {
     display: flex;
     position: relative;
     height: 30px;
     width: 100px;
     cursor: pointer;
 }
-.hero-hirebtn{
+
+.hero-hirebtn {
     background-color: brown;
     color: white;
     display: flex;
@@ -234,7 +267,8 @@ animation-iteration-count: infinite;
     width: 100%;
     align-items: center;
 }
-.hero-hirebtn::after{
+
+.hero-hirebtn::after {
 
     transform: scaleX(0);
     background-color: black;
@@ -246,34 +280,115 @@ animation-iteration-count: infinite;
     transform-origin: left;
     transition: transform 0.3s ease;
     z-index: -1;
-       
-    }
 
-.hero-hirebtn:hover::after{
- transform: scaleX(1);
+}
+
+.hero-hirebtn:hover::after {
+    transform: scaleX(1);
 }
 
 .project_section {
-     background-color:rgb(231, 231, 231);
-     margin-top: 4rem;
+    background-color: rgb(231, 231, 231);
+    margin-top: 4rem;
 }
 
-.pro-heading{
-color: var(--bg0range);
-font-size: 90px;
-text-align: center;
+.pro-heading {
+    color: var(--bg0range);
+    font-size: 90px;
+    text-align: center;
 }
-.project-cointainer{
+
+.project-cointainer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
+    gap: 120px;
+
 }
 
-.project_card{
-width: 90%;
-height: 550px;
+.project_card {
+    width: 90%;
+    height: 550px;
+    position: relative;
+    background-image: url(./images/projects/Project1.png);
+    background-size: cover;
+    box-shadow: 0px 0px 40px;
+}
+.project_card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+    z-index: 0;
+}
+
+.project_card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background :linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+.project_card:hover::before{
+    transform: scaleX(1);
+}
+
+.project-no{
+    font-size: 200px;
+    font-weight: 600px;
+    position: absolute;
+    color: white;
+    z-index: 10;
+}
+
+.project-no-right{
+    right: -40px;
+    top: -45px;
+}
+.project-no-left{
+    left: -40px;
+    top: -45px;
+}
 
 
+.projectcontent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1rem;
+    transition: all 0.4s;
+}
+.project-skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+    gap: 5px;
+    z-index: 10;
+}
+.project-skill{
+    width: 40px;
+}
+
+.project-heading{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
 }
