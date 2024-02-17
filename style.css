@@ -93,7 +93,7 @@ a {
     font-size: 7em;
     color: rgb(231, 231, 231);
     position: absolute;
-    bottom: -17.5%;
+    bottom: -17.7%;
     left: -15px;
     font-weight: bold;
     transition: all 3s;
@@ -177,7 +177,7 @@ a {
     z-index: 9;
     bottom: -1rem;
     right: 1rem;
-    animation: dots 5s infinite;
+    animation: dots 3s infinite;
 }
 
 @keyframes dots {
@@ -237,7 +237,7 @@ a {
     z-index: 9;
     top: -0.8rem;
     left: 5%;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-name: zigzag;
     animation-iteration-count: infinite;
 }
@@ -251,6 +251,21 @@ a {
 
 }
 
+.icon-plus{
+    left: 120px;
+    z-index: 1;
+    top: 0;
+    animation-name: plus;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes plus{
+    50%{
+        top: 5%;
+    }
+    
+}
+
 .btn {
     display: flex;
     position: relative;
@@ -260,33 +275,37 @@ a {
 }
 
 .hero-hirebtn {
-    background-color: brown;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
+    background-color: var(--bg0range);
+    color: rgb(250, 248, 248);
+    box-shadow: 5px 5px 7px #343d68;
+    padding: 5px 15px 5px 15px;
+    border-style: solid;
+    border-color: var(--bg0range);
+    z-index: 0;
+    position: relative;
 }
 
-.hero-hirebtn::after {
 
-    transform: scaleX(0);
-    background-color: black;
+
+.hero-hirebtn::before{
+    content: '';
+    color:black;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.3s ease;
+    transition-duration: 1s;
     z-index: -1;
-
 }
 
-.hero-hirebtn:hover::after {
-    transform: scaleX(1);
+.hero-hirebtn:hover::before{
+    transform: scaleX(1); 
 }
-
+.hero-hirebtn:hover{color: var(--bg0range);}
 .project_section {
     background-color: rgb(231, 231, 231);
     margin-top: 4rem;
