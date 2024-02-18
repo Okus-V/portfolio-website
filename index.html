@@ -10,7 +10,7 @@
 
 <body>
   <div id="wrapper">
-
+    
     <div class="cointainer">
       <div class="navbar">
         <div class="logo-conintainer">
@@ -20,8 +20,8 @@
 
         <div class="nav-menu">
           <div> <a href="#projects">Projects</a></div>
-          <div> <a href="#projects">Skill</a></div>
-          <div> <a href="#projects">Contact</a></div>
+          <div> <a href="#skills">Skill</a></div>
+          <div> <a href="#contact">Contact</a></div>
 
 
 
@@ -73,7 +73,7 @@
 
 
 
-    <div class="project_section">
+    <div class="project_section" id="projects">
       <h1 class="pro-heading">Projects</h1>
       <div class="project-cointainer">
 
@@ -226,7 +226,7 @@
 
     </div>
     <div id="skills" class="container skills-container ">
-      <div class="skill-fade-text">Skills</div>
+      <div class="skill-fade-text" id="skills">Skills</div>
 
       <div class="skill-container-left">
         <h2 class="skill-heading">
@@ -279,46 +279,66 @@
         <img src="./images/stack/Docker.svg" alt="" class="skills-logo" />
         <img src="./images/stack/K8s.svg" alt="" class="skills-logo" />
       </div>
-    
-    
-    
-    </div>
-    <div class="contactme_cointainer cointainer">
-      <div class="contact-heading"> <h1>Contact me</h1>
-      <h3>questions thought or just want to say Hii</h3></div>
-      <div class="form-fild cointainer">
-      <form action="">
-        <input type="name"
-        class="cont-name fild" 
-        placeholder="name" />
-      
-      <br>
-        <input type="email"
-        class="cont-email fild" 
-        placeholder="email" />
-<br>
-        <input type="text"
-        class="cont-adress fild" 
-        placeholder="subject" />
 
-<br>
-        <textarea name="message"
-        id="message" 
-        class="fild textarea1"
-        cols="30" 
-        rows="10"
-        placeholder="Write Your Message Here">
+
+
+    </div>
+    <div class="contactme_cointainer cointainer" >
+      <div class="contact-heading" id="contact">
+        <h1>Contact me</h1>
+        <h3>questions thought or just want to say Hii</h3>
+      </div>
+      <div class="form-fild cointainer" >
+        <form action="">
+          <input type="name" class="cont-name fild" placeholder="name" />
+
+          <br>
+          <input type="email" class="cont-email fild" placeholder="email" />
+          <br>
+          <input type="text" class="cont-adress fild" placeholder="subject" />
+
+          <br>
+          <textarea name="message" id="message" class="fild textarea1" cols="30" rows="10"
+            placeholder="Write Your Message Here">
         </textarea>
-      
-      <button type="button" class="send-btn">send </button>
-      
-      </form>
+
+          <button type="button" class="hero-hirebtn send-btn">send </button>
+
+        </form>
 
       </div>
-      
+
 
     </div>
+
+
+    <div class=" footerwrap">
+      <div class="footer-faded-text">Vedant Bhoir</div>
+
+      <div class="link-wrapper">
+        <div>
+          <a href="#projects">Projects</a>
+        </div>
+        <div>
+          <a href="#skills">Skills</a>
+        </div>
+        <div>
+          <a href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="icon-wrapper">
+        <i class="fa-brands fa-linkedin icon"></i>
+        <i class="fa-brands fa-github icon"></i>
+        <i class="fa-brands fa-twitter icon"></i>
+        <i class="fa-brands fa-instagram icon"></i>
+        <i class="fa-regular fa-envelope icon"></i>
+      </div>
+
+    </div>
+    </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
   <script>
