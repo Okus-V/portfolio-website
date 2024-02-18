@@ -329,7 +329,7 @@ align-items: center;
 
 .project_card {
     width: 75%;
-    height: 550px;
+    height: 500px;
     position: relative;
     background-image: url(./images/projects/Project1.png);
     background-size: cover;
@@ -363,6 +363,12 @@ align-items: center;
 .project_card:hover::before{
     transform: scaleX(1);
     
+}
+#pro1,#pro3 {
+    margin-left: 100px;
+}
+#pro2,#pro4 {
+    margin-right: 100px;
 }
 
 .project-no{
@@ -442,3 +448,72 @@ align-items: center;
     transform: scale(1.1);
     
 }
+.skills-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 100px;
+gap: 3rem;
+}
+
+.skill-container-left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    
+}
+
+.skill-container-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    position: relative;
+    z-index: 1;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.skills-logo{
+    width: 75px;
+    transition-duration: 0.5s;
+}
+.blob-style{
+    position: absolute;
+    z-index: -1;
+}
+.skill-heading{
+    color: var(--bg0range);
+    font-size: 50px;
+}
+.caps{
+    font-size: 90px;
+}
+.skills-logo:hover{
+    transform: scale(1.2);
+   
+}
+.skill-fade-text{
+    user-select: none;
+    font-size: 10em;
+    color: rgb(231, 231, 231);
+    position: absolute;
+    bottom: -540%;
+    right: 5%;
+    font-weight: bold;
+    transition: all 3s;
+    }
+    .blob-style {
+        animation: blob 5s infinite ease-in-out; /* Adding ease-in-out for smoother animation */
+        transform-origin: left;
+    }
+    
+    @keyframes blob {
+
+        50% {
+            transform: translatex(10%); /* Move up by 30% of its own height */
+            
+        }
+
+    }
+    
+    
