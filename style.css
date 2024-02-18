@@ -476,10 +476,12 @@ gap: 3rem;
 .skills-logo{
     width: 75px;
     transition-duration: 0.5s;
+    
 }
 .blob-style{
     position: absolute;
     z-index: -1;
+    user-select: none;
 }
 .skill-heading{
     color: var(--bg0range);
@@ -515,5 +517,49 @@ gap: 3rem;
         }
 
     }
-    
-    
+
+    .contact-heading h1{
+        color: var(--bg0range);
+        font-size: 80px;
+        margin-left: -350px;
+        text-transform: capitalize;
+    }
+
+    .contact-heading h3{
+        color: rgb(96, 94, 94);
+        font-size: 40px;
+        margin-left: -350px;
+        text-transform: capitalize;
+    }
+    .contactme_cointainer{   
+        display: flex;
+        margin-top: 103px;
+        flex-direction: column;
+        
+        align-items: center;
+        width: 100%;
+        background-color:rgb(231,231,231);}
+
+        .form-fild form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap :5px;
+            margin-top: 50px;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        
+        .fild{
+            width: 100%;
+            height: 45px;
+            box-shadow: 2px 2px 10px  rgb(96, 94, 94);
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .textarea1{
+            height: 200px;
+            padding: 10px;
+        }
