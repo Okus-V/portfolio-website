@@ -646,3 +646,134 @@ a {
     display: flex;
     gap: 1rem;
 }
+
+/* Your existing CSS styles */
+
+/* Media Query for Mobile Screens */
+@media only screen and (max-width: 600px) {
+    .cointainer {
+        width: 100%; /* Adjust width to fit smaller screens */
+        padding: 0 20px; /* Add some padding to the sides */
+    }
+
+    .navbar {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    .nav-menu {
+        padding: 0; /* Remove padding for smaller screens */
+    }
+
+    .logo-conintainer {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .logotext {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .hero-section {
+        gap: 2rem; /* Adjust gap for smaller screens */
+        margin: 2rem; /* Adjust margin for smaller screens */
+        padding-bottom: 4rem; /* Adjust padding for smaller screens */
+    }
+
+    .fade-text {
+        font-size: 4em; /* Reduce font size for smaller screens */
+        bottom: -15%; /* Adjust position for smaller screens */
+    }
+
+    .hero-heading {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .hero-subheading {
+        font-size: 30px; /* Reduce font size for smaller screens */
+        line-height: 40px; /* Adjust line height for smaller screens */
+    }
+
+    .hero-para {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .project_section {
+        margin-top: 2rem; /* Adjust margin for smaller screens */
+    }
+
+    .pro-heading {
+        font-size: 60px; /* Reduce font size for smaller screens */
+    }
+
+    .project-cointainer {
+        gap: 60px; /* Adjust gap for smaller screens */
+    }
+
+    .project_card {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 400px; /* Adjust height for smaller screens */
+    }
+
+    .projectcontent {
+        margin-left: 1em; /* Adjust margin for smaller screens */
+        bottom: 10%; /* Adjust position for smaller screens */
+    }
+
+    .project_heading {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .project-subHeading {
+        width: 80%; /* Adjust width for smaller screens */
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .btn-grp {
+        flex-direction: column; /* Change direction for smaller screens */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    .send-btn {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .skills-container {
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .skill-heading {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .skill-container-left,
+    .skill-container-right {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .skills-logo {
+        width: 50px; /* Reduce width for smaller screens */
+    }
+
+    .footerwrap {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Add padding for smaller screens */
+        flex-direction: column; /* Change direction for smaller screens */
+        align-items: center; /* Align items for smaller screens */
+        gap: 1rem; /* Adjust gap for smaller screens */
+    }
+
+    .footer-faded-text {
+        font-size: 30px; /* Reduce font size for smaller screens */
+        bottom: unset; /* Remove bottom position for smaller screens */
+        left: unset; /* Remove left position for smaller screens */
+        position: relative; /* Change position to relative for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .link-wrapper {
+        flex-direction: column; /* Change direction for smaller screens */
+        align-items: center; /* Align items for smaller screens */
+        gap: 0.5rem; /* Adjust gap for smaller screens */
+    }
+}
